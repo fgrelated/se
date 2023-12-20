@@ -51,6 +51,7 @@ def fetch_url(jar, url)
 end
 
 def valid_login?(jar)
+  return true if DRYRUN
   a = fetch_url(jar, 'https://goldtrail.files.wordpress.com/2015/11/speakeasy_banner.jpg')
   !(a.nil? || a =~ /403: Access Denied/i || a =~ /Private Site.*login/i)
 end
