@@ -4,3 +4,7 @@ src/*.xml
 *.zip
 cookies.txt
 images
+*.tgz
+images-full
+images-no3p
+burns
